@@ -6,7 +6,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Stories from "./pages/Stories";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
