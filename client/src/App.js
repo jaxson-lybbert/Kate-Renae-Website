@@ -1,3 +1,4 @@
+import * as React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -6,7 +7,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Stories from "./pages/Stories";
-import "./App.css";
 
 import { CssBaseline } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -29,6 +29,9 @@ function App() {
           default: "#f5f5f5",
           paper: "#fafafa",
         },
+      },
+      typography: {
+        fontFamily: "Droid Serif",
       },
     })
   );
