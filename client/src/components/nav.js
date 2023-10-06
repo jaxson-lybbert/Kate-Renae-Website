@@ -1,39 +1,69 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-import {
-  Typography,
-  AppBar,
-  Toolbar,
-  Menu,
-  MenuItem,
-  Container,
-} from "@mui/material";
-
-<AppBar position="relative">
-  <Toolbar></Toolbar>
-</AppBar>;
+import Typography from "@mui/material/Typography";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 
 function Nav() {
   return (
-    <AppBar>
+    <AppBar position="relative">
       <Toolbar>
         <Typography variant="h2" align="left">
           Kate Renae
         </Typography>
-        <ul>
-          <Link to={"/"} style={{ marginRight: "2rem" }}>
-            Home
+        <Box sx={{ display: "flex", flexGrow: 1, justifyContent: "flex-end" }}>
+          <Link to={"/"}>
+            <Typography variant="subtitle1" gutterBottom>
+              <Button
+                className="menu-button"
+                size="small"
+                color="secondary"
+                variant="contained"
+              >
+                Home
+              </Button>
+            </Typography>
           </Link>
-          <Link to={"/stories"} style={{ marginRight: "2rem" }}>
-            Stories
+          <Link to={"/stories"}>
+            <Typography variant="subtitle1" gutterBottom>
+              <Button
+                className="menu-button"
+                size="small"
+                color="secondary"
+                variant="contained"
+              >
+                Stories
+              </Button>
+            </Typography>
           </Link>
-          <Link to={"/about"} style={{ marginRight: "2rem" }}>
-            About
+          <Link to={"/about"}>
+            <Typography variant="subtitle1" gutterBottom>
+              <Button
+                className="menu-button"
+                size="small"
+                color="secondary"
+                variant="contained"
+              >
+                About
+              </Button>
+            </Typography>
           </Link>
-          <Link to={"/contact"} style={{ marginRight: "2rem" }}>
-            Contact
+          <Link to={"/contact"}>
+            <Typography variant="subtitle1" gutterBottom>
+              <Button
+                className="menu-button"
+                size="small"
+                color="secondary"
+                variant="contained"
+              >
+                Contact
+              </Button>
+            </Typography>
           </Link>
-        </ul>
+        </Box>
       </Toolbar>
     </AppBar>
   );

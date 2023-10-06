@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Stories from "./pages/Stories";
 
-import { CssBaseline } from "@mui/material";
+import CssBaseline from "@mui/material/CssBaseline";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 function App() {
@@ -39,18 +39,16 @@ function App() {
     <Router>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div className="flex-column justify-flex-start min-100-vh">
-          <div className="container">
-            {/* <Header /> */}
-            <Nav />
-            <Routes>
-              <Route path="/home" element={<Home />} />
-              <Route path="/stories" element={<Stories />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<Home />} />
-            </Routes>
-          </div>
+        <div className="container">
+          {/* <Header /> */}
+          <Nav />
+          <Routes>
+            {/* <Route path="/home" element={<Home />} />
+            <Route path="/stories" element={<Stories />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Home />} /> */}
+          </Routes>
         </div>
         <Footer />
       </ThemeProvider>
