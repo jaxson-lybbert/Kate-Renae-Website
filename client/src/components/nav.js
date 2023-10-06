@@ -10,11 +10,19 @@ import Button from "@mui/material/Button";
 function Nav() {
   return (
     <AppBar position="relative">
-      <Toolbar>
-        <Typography variant="h2" align="left">
+      <Toolbar disableGutters>
+        <Typography style={{ marginLeft: "20px" }} variant="h2" align="left">
           Kate Renae
         </Typography>
-        <Box sx={{ display: "flex", flexGrow: 1, justifyContent: "flex-end" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexGrow: 1,
+            justifyContent: "flex-end",
+            alignItems: "center",
+            marginRight: "20px",
+          }}
+        >
           <Link className="menu-button" to={"/"}>
             <Typography variant="subtitle1" gutterBottom>
               <Button size="small" color="secondary" variant="contained">
