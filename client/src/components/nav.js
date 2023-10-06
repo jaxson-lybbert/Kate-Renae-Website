@@ -15,50 +15,30 @@ function Nav() {
           Kate Renae
         </Typography>
         <Box sx={{ display: "flex", flexGrow: 1, justifyContent: "flex-end" }}>
-          <Link to={"/"}>
+          <Link className="menu-button" to={"/"}>
             <Typography variant="subtitle1" gutterBottom>
-              <Button
-                className="menu-button"
-                size="small"
-                color="secondary"
-                variant="contained"
-              >
+              <Button size="small" color="secondary" variant="contained">
                 Home
               </Button>
             </Typography>
           </Link>
-          <Link to={"/stories"}>
+          <Link className="menu-button" to={"/stories"}>
             <Typography variant="subtitle1" gutterBottom>
-              <Button
-                className="menu-button"
-                size="small"
-                color="secondary"
-                variant="contained"
-              >
+              <Button size="small" color="secondary" variant="contained">
                 Stories
               </Button>
             </Typography>
           </Link>
-          <Link to={"/about"}>
+          <Link className="menu-button" to={"/about"}>
             <Typography variant="subtitle1" gutterBottom>
-              <Button
-                className="menu-button"
-                size="small"
-                color="secondary"
-                variant="contained"
-              >
+              <Button size="small" color="secondary" variant="contained">
                 About
               </Button>
             </Typography>
           </Link>
-          <Link to={"/contact"}>
+          <Link className="menu-button" to={"/contact"}>
             <Typography variant="subtitle1" gutterBottom>
-              <Button
-                className="menu-button"
-                size="small"
-                color="secondary"
-                variant="contained"
-              >
+              <Button size="small" color="secondary" variant="contained">
                 Contact
               </Button>
             </Typography>
