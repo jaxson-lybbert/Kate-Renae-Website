@@ -1,17 +1,14 @@
+import React from "react";
+
+import { Typography } from "@mui/material";
+import { Container } from "@mui/material";
+
 export default function Footer() {
   return (
-    <footer>
-      <div class="contactInfo">
-        <ul id="footerList">
-          <li>Cell: ?</li>
-          <li>
-            <a href="">Insta Link?</a>
-          </li>
-          <li>
-            <a href="">Other Soical?</a>
-          </li>
-        </ul>
-      </div>
+    <footer className="footer">
+      <Typography variant="subtitle1" align="left">
+        Copyright © 2023 Kate Renae | All Rights Reserved
+      </Typography>
     </footer>
   );
 }

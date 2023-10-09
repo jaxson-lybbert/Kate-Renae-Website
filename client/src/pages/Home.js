@@ -24,26 +24,26 @@ function Home() {
 
   // Potential Carousel for top of Home Page??
 
-  const data = ["1", "2", "3", "4"];
+  //   const data = ["1", "2", "3", "4"];
 
-  const [index, setIndex] = useState(0);
-  const carouselScroll = () => {
-    if (index === data.length - 1) {
-      return setIndex(0);
-    }
-    return setIndex(index + 1);
-  };
+  //   const [index, setIndex] = useState(0);
+  //   const carouselScroll = () => {
+  //     if (index === data.length - 1) {
+  //       return setIndex(0);
+  //     }
+  //     return setIndex(index + 1);
+  //   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      carouselScroll();
-    }, 3000);
-    return () => clearInterval(interval);
-  });
+  //   useEffect(() => {
+  //     const interval = setInterval(() => {
+  //       carouselScroll();
+  //     }, 3000);
+  //     return () => clearInterval(interval);
+  //   });
 
   return (
     <>
-      <div className="carousel-container">
+      {/* <div className="carousel-container">
         {data.map((item, index) => {
           return (
             <h1
@@ -55,7 +55,7 @@ function Home() {
             </h1>
           );
         })}
-      </div>
+      </div> */}
     </>
   );
 }
