@@ -9,9 +9,9 @@ import Button from "@mui/material/Button";
 
 function Nav() {
   return (
-    <AppBar position="relative">
+    <AppBar position="static">
       <Toolbar disableGutters>
-        <Typography style={{ marginLeft: "20px" }} variant="h2" align="left">
+        <Typography style={{ marginLeft: "60px" }} variant="h2" align="center">
           Kate Renae
         </Typography>
         <Box
