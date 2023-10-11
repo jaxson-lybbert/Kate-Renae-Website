@@ -6,56 +6,89 @@ import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 
+import {
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Container,
+  Grid,
+} from "@mui/material";
+
 function Home() {
-  //   const coverImages = [
-  //     {
-  //       label: "Sky of Dreams",
-  //       imgPath: "https://source.unsplash.com/random",
-  //     },
-  //     {
-  //       label: "World of Shadow",
-  //       imgPath: "https://source.unsplash.com/random",
-  //     },
-  //     {
-  //       label: "Death and Dusk",
-  //       imgPath: "https://source.unsplash.com/random",
-  //     },
-  //   ];
+  const coverImages = [
+    {
+      label: "Sky of Dreams",
+      imgPath: "../assets/Sky of Dreams.jpg",
+      number: 1,
+    },
+    {
+      label: "World of Shadow",
+      imgPath: "../assets/World of Shadow.jpg",
+      number: 2,
+    },
+    {
+      label: "Death and Dusk",
+      imgPath: "../assets/Death and Dusk.jpg",
+      number: 3,
+    },
+  ];
 
   // Potential Carousel for top of Home Page??
 
-  //   const data = ["1", "2", "3", "4"];
-
-  //   const [index, setIndex] = useState(0);
-  //   const carouselScroll = () => {
-  //     if (index === data.length - 1) {
-  //       return setIndex(0);
-  //     }
-  //     return setIndex(index + 1);
-  //   };
-
-  //   useEffect(() => {
-  //     const interval = setInterval(() => {
-  //       carouselScroll();
-  //     }, 3000);
-  //     return () => clearInterval(interval);
-  //   });
-
   return (
     <>
-      {/* <div className="carousel-container">
-        {data.map((item, index) => {
-          return (
-            <h1
-              className="carousel-item"
-              style={{ transform: `translate(-${index * 100}%)` }}
-              key={index}
+      <main>
+        <div>
+          <Container maxWidth="sm">
+            <Typography
+              style={{ marginTop: "10px" }}
+              variant="h2"
+              align="center"
+              gutterBottom
             >
-              {item}
-            </h1>
-          );
-        })}
-      </div> */}
+              Realms of Radiance
+            </Typography>
+          </Container>
+        </div>
+        <Container className="imageContainer" maxWidth="md">
+          <Grid container spacing={4}>
+            {coverImages.map((cover) => (
+              <Grid item key={cover} xs={12} sm={6} md={4}>
+                <Card className="coverCard">
+                  <CardMedia
+                    className="cardImage"
+                    image={cover.imgPath}
+                    title="Sky of Dreams"
+                  >
+                    <CardContent style={{ flexGrow: "1" }}>
+                      <Typography
+                        className="cardText"
+                        gutterBottom
+                        variant="h5"
+                      >
+                        {cover.label}
+                      </Typography>
+                      <Typography className="cardText">
+                        Book {cover.number}
+                      </Typography>
+                    </CardContent>
+                    <CardActions>
+                      <Button
+                        variant="contained"
+                        size="small"
+                        color="secondary"
+                      >
+                        Read Now
+                      </Button>
+                    </CardActions>
+                  </CardMedia>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </main>
     </>
   );
 }

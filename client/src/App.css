@@ -18,3 +18,21 @@
   justify-content: center;
   transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
+
+.imageContainer {
+  padding: 40px;
+}
+
+.coverCard {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.cardImage {
+  padding-top: 56.25%;
+}
+
+.cardText {
+  color: #fafafa;
+}
