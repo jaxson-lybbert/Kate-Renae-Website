@@ -36,3 +36,13 @@
 .cardText {
   color: black;
 }
+
+.newsletter {
+  align-items: center;
+  padding-top: 40px;
+  display: flex;
+}
+
+.signUpBtn {
+  padding: 20px;
+}

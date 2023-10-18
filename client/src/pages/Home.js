@@ -110,11 +110,23 @@ function Home() {
                       )}
                     </a>
                   </CardActions>
-                  {/* </CardMedia> */}
                 </Card>
               </Grid>
             ))}
           </Grid>
+        </Container>
+        <Container className="newsletter">
+          <Typography variant="h5" align="center">
+            Click here to stay in the loop with Realms of Radiance updates and
+            extra content!
+          </Typography>
+          <Typography className="signUpBtn" variant="h5" align="center">
+            <a href="https://subscribepage.io/mQs3Dt">
+              <Button variant="contained" size="large">
+                Sign Up
+              </Button>
+            </a>
+          </Typography>
         </Container>
       </main>
     </>
