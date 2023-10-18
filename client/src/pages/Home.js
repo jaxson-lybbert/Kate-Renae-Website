@@ -72,7 +72,7 @@ function Home() {
           </Container>
         </div>
         <Container className="imageContainer" maxWidth="md">
-          <Grid container spacing={4}>
+          <Grid container spacing={6}>
             {coverImages.map((cover) => (
               <Grid item key={cover} xs={12} sm={6} md={4}>
                 <Card className="coverCard">
